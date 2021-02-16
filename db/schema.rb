@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 Task.create title: 'Laundry', details: 'Do not mix colors!'
-Task.create title: 'Studying', details: 'A lot of flashcards to do', completed: true# This file is auto-generated from the current state of the database. Instead
+Task.create title: 'Studying', details: 'A lot of flashcards to do', completed: true # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
@@ -11,14 +13,12 @@ Task.create title: 'Studying', details: 'A lot of flashcards to do', completed: 
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_16_105205) do
-
-  create_table "tasks", force: :cascade do |t|
-    t.string "title"
-    t.string "details"
-    t.boolean "completed", default: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+ActiveRecord::Schema.define(version: 20_210_216_105_205) do
+  create_table 'tasks', force: :cascade do |t|
+    t.string 'title'
+    t.string 'details'
+    t.boolean 'completed', default: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
-
 end
